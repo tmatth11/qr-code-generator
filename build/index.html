@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QR Code Generator</title>
+	<link rel="icon" href="icon.png">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/main.js" defer></script>
+</head>
+
+<body class="bg-green-200 flex flex-col items-center justify-center min-h-screen p-3">
+	<div class="container flex flex-col items-center mx-auto bg-white p-4 shadow-lg rounded-lg">
+		<h1 class="text-4xl text-center font-bold mb-2">QR Code Generator</h1>
+		<p class="text-lg text-center mb-5">Paste a URL or enter text to create a QR code.</p>
+		<form id="form" class="flex flex-col items-center sm:flex-row gap-3">
+			<input id="code-input" class="px-3 py-2 border border-gray-300 rounded-md shadow-sm text-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" type="text" spellcheck="false" placeholder="Enter text or URL">
+			<button id="submit" class="p-2 bg-green-400 rounded-md hover:bg-green-300 active:bg-green-200">Generate QR Code</button>
+		</form>
+		<div id="code-container" class="hidden flex-col items-center mt-10">
+			<h1 class="text-3xl mb-4">Your QR Code:</h1>
+			<img id="qr-code" src="" alt="qr code">
+			<button id="copy" class="mt-4 p-2 bg-green-400 rounded-md hover:bg-green-300 active:bg-green-200">Copy to Clipboard</button>
+		</div>
+	</div>
+</body>
+
+</html>
